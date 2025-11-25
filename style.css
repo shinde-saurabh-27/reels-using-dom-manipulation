@@ -116,3 +116,29 @@ main{
     font-size: 12px;
     pointer-events: none;
 }
+
+@media screen and (max-width: 900px) {
+
+    .all-reels{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    main {
+        padding: 0;
+    }
+
+    .all-reels{
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+    .reel{
+        border-radius: 0;
+    }
+    .reel video{
+        border-radius: 0;
+    }
+}
