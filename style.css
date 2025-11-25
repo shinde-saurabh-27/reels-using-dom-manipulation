@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(25, 24, 24), black);
+    padding: 20px;
+}
+
+.all-reels {
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    border-radius: 20px;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.all-reels::-webkit-scrollbar {
+    display: none;
+}
+
+.all-reels .reel {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    color: white;
+    position: relative;
+    margin-bottom: 100px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.all-reels .reel video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.all-reels .reel .bottom {
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.288));
+}
+
+.all-reels .reel .bottom .user-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.all-reels .reel .bottom .user-info img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.all-reels .reel .bottom .user-info button{
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.all-reels .reel .bottom .reel-info p{
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.all-reels .reel .right {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.all-reels .reel .right .btns {
+    cursor: pointer;
+}
+
+.all-reels .reel .right .btns i{
+    font-size: 25px;
+    pointer-events: none;
+}
+
+.all-reels .reel .right .btns h4 {
+    font-size: 12px;
+    pointer-events: none;
+}
