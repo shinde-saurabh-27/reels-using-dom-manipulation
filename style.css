@@ -15,6 +15,7 @@ main{
     width: 100%;
     background: linear-gradient(rgb(25, 24, 24), black);
     padding: 20px;
+    overflow: hidden;
 }
 
 .all-reels {
